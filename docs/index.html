@@ -2,7 +2,7 @@
 <html>
 
 <head>
- <title>Suvevaheajani aega</title>
+ <title>Suvevaheajan lõpuni</title>
  <link rel="stylesheet" href="index.css">
  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -14,7 +14,7 @@
 			hour = minute * 60,
 			day = hour * 24;
 		 
-		  let vaheaeg = "Jun 14, 2022 23:59:00",
+		  let vaheaeg = "Sep 1, 2022 00:00:00",
 			countDown = new Date(vaheaeg).getTime(),
 			x = setInterval(function () {
 			  let now = new Date().getTime(),
@@ -37,7 +37,7 @@
 				  countdown = document.getElementById("countdown"),
 				  content = document.getElementById("content");
 		 
-				headline.innerText = "Suvevaheaeg on!";
+				headline.innerText = "Suvevaheaeg on läbi!";
 				countdown.style.display = "none";
 				content.style.display = "block";
 		 
@@ -49,7 +49,7 @@
 		 
 	</script>
 	<div class="container">
-  <h1 id="headline">Suvevaheajani on jäänud:</h1>
+  <h1 id="headline">Suvevaheajan lõpuni on jäänud:</h1>
   <div id="countdown">
     <ul>
       <li><span id="days"></span>Päeva</li>
